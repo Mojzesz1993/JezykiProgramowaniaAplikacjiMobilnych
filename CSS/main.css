@@ -1,0 +1,133 @@
+html 
+{ 
+    scroll-behavior: smooth; 
+    background-image: url("../IMAGES/background.jpg");
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+.passwordGenerator
+{
+    margin-top: 10px;
+}
+
+.section
+{
+    padding: 50px 0;
+    text-align: center;
+    background-size: cover;
+}
+
+.cats
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.label
+{
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+.button,
+.field
+{
+    font-size: 30px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px 20px;
+    margin: 0 5px;
+}
+
+.button:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.button:active
+{
+    background-color: #000;
+    color: #fff;
+}
+
+.header1
+{
+    font-size: 50px;
+}
+
+.header2 
+{
+    font-size: 70px;
+}
+
+.nav
+{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #fff;
+    box-shadow:  8px 8px 8px #474747;
+}
+
+.nav ul 
+{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li 
+{
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.nav ul li a 
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.photoContainer
+{
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin-top: 40px;
+}
+
+.photo
+{
+    width: 60%;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 4px #474747;
+}
+
+.footer
+{
+    background-color: aliceblue;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

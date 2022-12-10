@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Projekt zaliczeniowy - Jezyki Programowania Aplikacji Mobilnych" />
+        <meta name="author" content="Hubert Organiściak 74216, Tomasz Lubryka 46255" />
+        <title>Hasla bardzo</title>
+
+        
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+        <link href="CSS/main.css" rel="stylesheet" />
+        <link href="CSS/PasswordCheck.css" rel="stylesheet" />
+        <link href="CSS/carousel.css" rel="stylesheet" />
+        <link href="CSS/check.css" rel="stylesheet" />
+        <link href="CSS/lesson.css" rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#lesson" class='link'>Jakie hasło to dobre hasło?</a></li>
+                <li><a href="#passwordCheck" class='link'>Sprawdz swoje hasło!</a></li>
+                <li><a href="#passwordGenerator" class='link'>Wygeneruj dobre hasło!</a></li>
+                <li><a href="#cats" class='link'>Koty?</a></li>
+                <li><a href="#footer" class='link'>Autorzy</a></li>
+            </ul>
+        </nav>
+
+        <section id = "lesson" class="lesson">
+            <h1>Aplikacja edukacjyna pozwaląca określić siłę hasła na podstawie jego złożoności</h1>
+                <h2>Główne założenia edukacyjne</h2>
+                    <ul>
+                        <li>Aplikacja pozwala zrozumieć z czego wynika siła hasła.</li>
+                        <li>Dlaczego unikatowe silne hasło jest istotne.</li>
+                        <li>Pozwala sprawdzić wymyślone przez siebie hasło .</li>                            <li>Wygenerować silne hasło na podstawie podanej wartośli ilości znaków.</li>
+                    </ul>
+        </section>
+
+        <section class="lesson">
+            <h2> Siła i unikatowość hasła</h2>
+                <p>Istotn jest aby hasło było złożone z wielu zaków małych i dużych liter, znaków specjlnych oraz cyfr.</p>
+                <ul>
+                    <li>Zbudowane hasło skaładające się ze znaków np. :;#$@! LLRSkfs oraz 34225, jest trudne do złamania. </li>
+                    <li>ilość znaków w haśle również znacznie wpływa na wydłużenie czasu potrzebnego na jego złamanie.</li>
+                    <li>To włąsnie użyte znaki specjalne oraz ilość tych zankó w haśle łącznie wpływa na jego bezpieczństwo - siłę.</li>
+                </ul>	
+        </section>
+        
+
+        <form id = "passwordCheck" class="center-block">
+            <h2>Przetestuj siłę swojego hasła</h2>
+            <input type="text" id="password" autocomplete="off" class="form-control input-lg">
+            
+            <br>
+        
+            <button class="btn btn-success btn-lg btn-block button">Restart</button>
+            
+            <br>
+
+            <progress class = "progress-bar" max="100" value="0" id="meter"></progress>
+            
+        </form>
+            
+        <div class="textbox text-center"> &#8195 </div>
+
+        <section id="passwordGenerator" class="section passwordGenerator">
+            <h2 calss="lesson">Narzędzie pozwalające wygenerować silne hasło o wybranej długości</h2>
+            <label class="label">Wybierz długość hasła</label>
+            <select id="charLen" name="charLen" class="field">
+                <option value="8" selected >8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+            </select>
+
+            <br><br>
+
+            <input class="button" type="button" onclick="generatePassword(charLen.value)" value="Generuj hasło">
+
+            <br>
+
+            <input class="field" type="text" id="output" >
+
+            <br>
+
+            <input class="button" type="button" onclick="copyPassword()" value="Kopiuj hasło">
+        </section>
+
+
+        <section id="cats" class="section cats">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade" style="display: none">
+                    <img src="IMAGES/CATS/1.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade" style="display: none">
+                    <img src="IMAGES/CATS/4.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade" style="display: none">
+                    <img src="IMAGES/CATS/3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade" style="display: none">
+                    <img src="IMAGES/CATS/6.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade" style="display: none">
+                    <img src="IMAGES/CATS/5.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade" style="display: none">
+                    <img src="IMAGES/CATS/2.jpg" style="width:100%">
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer id = "footer" class="footer">
+        <p>Strona powstała na potrzeby projektu zaliczeniowego z przedmiotu Języki Programowania Aplikacji Mobilnych</p>
+        <p>Projekt przygotowali:</p>
+        <ul>
+            <li>Hubert Organiściak 47216</li>
+            <li>Tomasz Lubryka 46255</li>
+        </ul>
+    </footer>
+        <script language="JavaScript" type="text/javascript" src="JS/passwordGenerator.js"></script> 
+        <script language="JavaScript" type="text/javascript" src="JS/answerGenerator.js"></script>
+        <script language="JavaScript" type="text/javascript" src="JS/carousel.js"></script>
+        <script language="JavaScript" type="text/javascript" src="JS/PasswordCheck.js"></script>
+</html>
